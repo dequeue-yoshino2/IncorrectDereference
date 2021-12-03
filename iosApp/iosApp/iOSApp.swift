@@ -110,27 +110,27 @@ func testCode2a() {
     
     /* Output
      
-     <_NSMainThread: 0x600003968140>{number = 1, name = main}: hoge
-     Uncaught Kotlin exception: kotlin.native.IncorrectDereferenceException: illegal attempt to access non-shared com.example.incorrectdereference.ObjectFromKotlin@2c3c0c8 from other thread
-     2021-12-03 11:32:21.629800+0900 iosApp[54925:689146] [Unknown process name] copy_read_only: vm_copy failed: status 1.
-         at 0   iosApp                              0x000000010ab10231 kfun:kotlin.Throwable#<init>(kotlin.String?){} + 97
-         at 1   iosApp                              0x000000010ab0aa7d kfun:kotlin.Exception#<init>(kotlin.String?){} + 93
-         at 2   iosApp                              0x000000010ab0ab7d kfun:kotlin.RuntimeException#<init>(kotlin.String?){} + 93
-         at 3   iosApp                              0x000000010ab2ac5d kfun:kotlin.native.IncorrectDereferenceException#<init>(kotlin.String){} + 93
-         at 4   iosApp                              0x000000010ab2c4af ThrowIllegalObjectSharingException + 623
-         at 5   iosApp                              0x000000010ac32462 _ZN12_GLOBAL__N_128throwIllegalSharingExceptionEP9ObjHeader + 34
-         at 6   iosApp                              0x000000010ac3278d _ZN12_GLOBAL__N_136terminateWithIllegalSharingExceptionEP9ObjHeader + 13
-         at 7   iosApp                              0x000000010ac32909 _ZNK27BackRefFromAssociatedObject3refIL11ErrorPolicy3EEEP9ObjHeaderv + 185
-         at 8   iosApp                              0x000000010ab04c85 -[KotlinBase toKotlin:] + 21
-         at 9   iosApp                              0x000000010ac2b52e Kotlin_ObjCExport_refFromObjC + 78
-         at 10  iosApp                              0x000000010aaffd6f objc2kotlin.7 + 143
-         at 11  iosApp                              0x000000010aafe0a0 $s6iosApp10testCode2ayyFyycfU_ + 48 (/Users/work/Documents/repos/IncorrectDereference/iosApp/iosApp/iOSApp.swift:97:23)
-         at 12  iosApp                              0x000000010aafd168 $sIeg_IeyB_TR + 40
-         at 13  libdispatch.dylib                   0x000000010aec9a28 _dispatch_call_block_and_release + 12
-         at 14  libdispatch.dylib                   0x000000010aecac0c _dispatch_client_callout + 8
-         at 15  libdispatch.dylib                   0x000000010aed160f _dispatch_lane_serial_drain + 858
-         at 16  libdispatch.dylib                   0x000000010aed22fe _dispatch_lane_invoke + 436
-         at 17  libdispatch.dylib                   0x000000010aede59b _dispatch_workloop_worker_thread + 900
+     <_NSMainThread: 0x600003ee0000>{number = 1, name = main}: hoge
+     Uncaught Kotlin exception: kotlin.native.IncorrectDereferenceException: illegal attempt to access non-shared com.example.incorrectdereference.ObjectFromKotlin@2bda948 from other thread
+     2021-12-03 12:09:22.381772+0900 iosApp[59480:750900] [Unknown process name] copy_read_only: vm_copy failed: status 1.
+         at 0   iosApp                              0x000000010d0c51e1 kfun:kotlin.Throwable#<init>(kotlin.String?){} + 97
+         at 1   iosApp                              0x000000010d0bfa2d kfun:kotlin.Exception#<init>(kotlin.String?){} + 93
+         at 2   iosApp                              0x000000010d0bfb2d kfun:kotlin.RuntimeException#<init>(kotlin.String?){} + 93
+         at 3   iosApp                              0x000000010d0dfc0d kfun:kotlin.native.IncorrectDereferenceException#<init>(kotlin.String){} + 93
+         at 4   iosApp                              0x000000010d0e145f ThrowIllegalObjectSharingException + 623
+         at 5   iosApp                              0x000000010d1e7412 _ZN12_GLOBAL__N_128throwIllegalSharingExceptionEP9ObjHeader + 34
+         at 6   iosApp                              0x000000010d1e773d _ZN12_GLOBAL__N_136terminateWithIllegalSharingExceptionEP9ObjHeader + 13
+         at 7   iosApp                              0x000000010d1e78b9 _ZNK27BackRefFromAssociatedObject3refIL11ErrorPolicy3EEEP9ObjHeaderv + 185
+         at 8   iosApp                              0x000000010d0b9c35 -[KotlinBase toKotlin:] + 21
+         at 9   iosApp                              0x000000010d1e04de Kotlin_ObjCExport_refFromObjC + 78
+         at 10  iosApp                              0x000000010d0b4d1f objc2kotlin.7 + 143
+         at 11  iosApp                              0x000000010d0b2730 $s6iosApp10testCode2ayyFyycfU_ + 48 (/Users/work/Documents/repos/IncorrectDereference/iosApp/iosApp/iOSApp.swift:106:23)
+         at 12  iosApp                              0x000000010d0b1b48 $sIeg_IeyB_TR + 40
+         at 13  libdispatch.dylib                   0x000000010d47ea28 _dispatch_call_block_and_release + 12
+         at 14  libdispatch.dylib                   0x000000010d47fc0c _dispatch_client_callout + 8
+         at 15  libdispatch.dylib                   0x000000010d48660f _dispatch_lane_serial_drain + 858
+         at 16  libdispatch.dylib                   0x000000010d4872fe _dispatch_lane_invoke + 436
+         at 17  libdispatch.dylib                   0x000000010d49359b _dispatch_workloop_worker_thread + 900
          at 18  libsystem_pthread.dylib             0x00007fff6bfeb45d _pthread_wqthread + 314
          at 19  libsystem_pthread.dylib             0x00007fff6bfea42f start_wqthread + 15
 
